@@ -1,0 +1,45 @@
+
+/*Universal*/
+html {
+  font-family: helvetica;
+  font-size: 16px;
+}
+.flex {
+  display: flex;
+}
+.sb {
+  justify-content: space-between;
+}
+.vcenter{
+  align-items: center;
+}
+
+/*Header*/
+header {
+  height: 64px;
+}
+/*Logo*/
+#logo{
+  padding-left: 24px;
+  color: grey;
+}
+#logo img {
+  max height:55px;
+}
+#logo span{
+  font-weight: bolder;
+  color:#3c3838;
+}
+/*Navigation*/
+nav{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+nav a{
+  text-decoration: none;
+  color:black;
+  padding-left: 16px;
+}
+nav ul:last-child {
+  padding-right: 24px;
+}
