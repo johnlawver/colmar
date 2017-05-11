@@ -2,7 +2,20 @@
 /*Universal*/
 html {
   font-family: helvetica;
-  font-size: 16px;
+  color:#4a4a4a;
+  font-size: 14px;
+}
+h1, h2, h3, h4, h5, h6{
+  font-weight: bold;
+}
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.7em;
+}
+h3 {
+  font-size:1.17em;
 }
 .flex {
   display: flex;
@@ -12,6 +25,9 @@ html {
 }
 .vcenter{
   align-items: center;
+}
+.graybg {
+  background-color: #d8d8d8
 }
 
 /*Header*/
@@ -42,4 +58,79 @@ nav a{
 }
 nav ul:last-child {
   padding-right: 24px;
+}
+/*Call To Action*/
+.CTAimg {
+  width:60%;
+  height:auto;
+}
+.CTAimg img {
+  max-width:100%;
+  height:auto;
+  padding:32px 24px;
+}
+.CTAtext {
+  flex:1;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 0 40px;
+  padding-left: 40px;
+}
+.CTAtext p {
+  padding:32px 0;
+}
+.CTAbtn {
+  flex:0 100%;
+  text-align: center;
+  padding:8px ;
+  color:white;
+  background-color: #4a4a4a;
+}
+/**/
+.infoHeadline {
+  flex: 1 ;
+  padding: 32px 24px;
+}
+.infoHeadline img {
+  max-width:100%
+}
+.infoHeadline h2 {
+  padding: 32px 0;
+}
+.infoHeadline p {
+  font-weight: lighter;
+}
+.infoStories {
+  flex-direction: column;
+  justify-content: center;
+  flex:0 0 432px;
+  border-left: 1px solid #d8d8d8;
+
+}
+.infoStory {
+  border-bottom: 1px solid #d8d8d8;
+  padding:16px;
+}
+.storyImg {
+  width: 35%;
+}
+.storyImg  img{
+  width:100%;
+  height:auto;
+}
+.storyText {
+  flex:1;
+  justify-content: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
+  padding:16px;
+}
+.storyText p {
+  font-weight: lighter;
+  padding: 8px 0;
+}
+.storyText span {
+  font-weight: lighter;
+  color: #558dca;
 }
