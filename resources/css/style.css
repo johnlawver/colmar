@@ -87,7 +87,7 @@ nav ul:last-child {
   color:white;
   background-color: #4a4a4a;
 }
-/**/
+/*Info Section*/
 .infoHeadline {
   flex: 1 ;
   padding: 32px 24px;
@@ -100,6 +100,9 @@ nav ul:last-child {
 }
 .infoHeadline p {
   font-weight: lighter;
+}
+.infoHeadline #quote {
+  padding-bottom: 30px;
 }
 .infoStories {
   flex-direction: column;
@@ -133,4 +136,40 @@ nav ul:last-child {
 .storyText span {
   font-weight: lighter;
   color: #558dca;
+}
+/*Major Section*/
+.majorHeader {
+  padding-top: 32px;
+  text-align: center;
+}
+.degreesContainer {
+  padding: 32px 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+.degreeContainer {
+  padding: 12px 16px;
+  flex: 0 0 30%;
+  flex-direction: column;
+}
+@media only screen and (max-width:1050px) {
+  .degreeContainer {
+    flex: 0 0 25%;
+  }
+}
+/*^^^^^^NEED MEDIA QUERRY TO DROP PADDING SO IT REMAINS 3 COLUMNS*/
+.degreeImg img{
+  width:100%;
+}
+.degreeInfo {
+  background-color: #FFFFFF;
+  padding: 16px;
+  flex-grow: 1;
+}
+.degreeInfo #courses {
+  padding: 8px 0;
+}
+.degreeInfo:last-child {
+  padding-bottom: 24px'
 }
