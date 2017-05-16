@@ -4,6 +4,7 @@ html {
   font-family: helvetica;
   color:#4a4a4a;
   font-size: 14px;
+  background-color: #f3f5f5;
 }
 h1, h2, h3, h4, h5, h6{
   font-weight: bold;
@@ -166,6 +167,9 @@ nav ul:last-child {
   width:100%;
   height:auto;
 }
+.mobileIMG {
+  display: none;
+}
 .storyText {
   flex:1;
   justify-content: flex-start;
@@ -180,6 +184,33 @@ nav ul:last-child {
 .storyText span {
   font-weight: lighter;
   color: #558dca;
+}
+
+@media only screen and (max-width:480px) {
+  .infoHeadline {
+    display: none;
+  }
+  .infoStories {
+    flex: 0 0 100%;
+  }
+  .infoStory {
+    flex-wrap: wrap;
+  }
+  .storyText {
+    width: 100%;
+  }
+  .lrgIMG {
+    display: none;
+  }
+  .mobileIMG {
+    display: block;
+  }
+  .storyImg {
+    width: 100%;
+  }
+  .storyText p {
+    width: 100%;
+  }
 }
 /*Major Section*/
 .majorHeader {
@@ -197,12 +228,39 @@ nav ul:last-child {
   flex: 0 0 30%;
   flex-direction: column;
 }
+.mobiledegrees {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 16px;
+  padding-bottom: 32px;
+}
+.degreebtn {
+  flex:0 90%;
+  margin: 8px;
+  padding:16px ;
+  color:#4a4a4a;
+  background-color: #d8d8d8;
+}
+.degree span {
+ padding: 16px;
+}
 @media only screen and (max-width:1050px) {
   .degreeContainer {
     flex: 0 0 25%;
   }
 }
-/*^^^^^^NEED MEDIA QUERRY TO DROP PADDING SO IT REMAINS 3 COLUMNS*/
+@media only screen and (max-width:600px) {
+  .degreesContainer {
+    display: none;
+  }
+  .mobiledegrees {
+    display: flex;
+  }
+  .majors {
+    background-color: inherit !important;
+  }
+}
 .degreeImg img{
   width:100%;
 }
