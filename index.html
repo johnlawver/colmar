@@ -12,7 +12,7 @@
         <img src="./resources/images/ic-logo.svg" alt="Company Logo">
         <p><span>COLMAR</span>ACADEMY</p>
       </div>
-      <nav>
+      <nav id='navbig'>
         <ul class="flex vcenter">
           <li><a href="#oncampus">On Campus</a></li>
           <li><a href="#online">Online</a></li>
@@ -20,10 +20,16 @@
           <li><a href="#signin">Sign In</a></li>
         </ul>
       </nav>
+      <nav id='mobilenav'>
+        <img src="./resources/images/ic-logo.svg" alt="Company Logo">
+        <img src="./resources/images/ic-on-campus.svg" alt="On Campus">
+        <img src="./resources/images/ic-online.svg" alt="Online">
+        <img src="./resources/images/ic-login.svg" alt="Login">
+      </nav>
     </header>
     <div class="content">
       <!--Call to Action-->
-      <div class="flex graybg">
+      <div id='CTA' class="flex graybg">
         <div class="CTAimg">
           <img src="./resources/images/banner.jpg" alt="Students studying at a table">
         </div>
@@ -142,6 +148,53 @@
           </div>
         </div>
       </div>
+      <!--Thesis-->
+      <div>
+        <h1 id="thesisHeader">Thsis exhibit</h1>
+      </div>
+      <div class="flex">
+        <div class="exhibitHeadline">
+          <div class="exhibitVideo">
+          <video src="./resources/videos/thesis.mp4"><br />
+          </div>
+          <div class="exhibitText">
+            <h2>Reimagine  Urban</h2>
+            <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequant ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique liguela."</p>
+          </div>
+
+        </div>
+        <div class="infoStories flex" id='thesisOverride'>
+          <div class="infoStory graybg flex">
+            <div class="storyImg graybg">
+              <img src="./resources/images/thesis-fisma.jpg" alt="FISMA">
+            </div>
+            <div class="storyText flex">
+              <h3>Fisma: Design</h3>
+              <p>Design showcase of new prototype product</p>
+            </div>
+          </div>
+          <div class="infoStory flex" id='thesisOverride'>
+            <div class="storyImg">
+              <img src="./resources/images/thesis-now-and-then.jpg" alt="Now and Then">
+            </div>
+            <div class="storyText flex">
+              <h3>Now and then</h3>
+              <p>Research study about New York</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <footer class="flex sb">
+      <div class="flex vcenter">
+        <p>&copy;</p>
+      </div>
+      <nav>
+        <ul class="flex vcenter">
+          <li><a href="#Terms">Terms</a></li>
+          <li><a href="#Privacy">Privacy</a></li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>
