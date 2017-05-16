@@ -129,6 +129,9 @@ nav ul:last-child {
     padding-top: 32px;
     padding-bottom: 24px;
   }
+  .CTAbtn {
+    background-color: #9b9b9b;
+  }
 }
 /*Info Section*/
 .infoHeadline {
@@ -195,6 +198,8 @@ nav ul:last-child {
   }
   .infoStory {
     flex-wrap: wrap;
+    background-color: inherit !important;
+    border: none;
   }
   .storyText {
     width: 100%;
@@ -207,6 +212,7 @@ nav ul:last-child {
   }
   .storyImg {
     width: 100%;
+
   }
   .storyText p {
     width: 100%;
@@ -297,6 +303,16 @@ nav ul:last-child {
   border: 0;
   justify-content: flex-start;
 }
+@media only screen and (max-width:600px) {
+  #thesisOverride, .exhibitText{
+    display: none;
+  }
+  .exhibitHeadline video {
+    max-width: 100%;
+    margin: 0;
+    padding: 0 0 24px 0;
+  }
+}
 /*Footer*/
 footer {
   border-top: 1px solid #d8d8d8;
@@ -305,4 +321,9 @@ footer {
 footer p{
   padding-left: 24px;
 
+}
+@media only screen and (max-width:480px) {
+  footer nav {
+    display: none;
+  }
 }
